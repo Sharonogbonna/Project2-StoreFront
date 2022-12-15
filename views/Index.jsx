@@ -1,13 +1,12 @@
 const React = require("react");
-// const DefaultLayout = require('./Default.jsx')
+const DefaultLayout = require('./Default.jsx')
 
 class Index extends React.Component {
   render() {
     const { product } = this.props;
     return (
-      // <DefaultLayout title="Store Front">
-      <div>
-        <h1>Sharon the Scents</h1>
+      <DefaultLayout title="Sharomatherapy">
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
         <ul>
           {product.map((product) => {
             return (
@@ -19,8 +18,9 @@ class Index extends React.Component {
             );
           })}
         </ul>
-      </div>
-      // </DefaultLayout>
+      </DefaultLayout>
     );
   }
 }
+ 
+module.exports = Index

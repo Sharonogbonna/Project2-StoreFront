@@ -14,7 +14,8 @@ app.use((req, res, next) => {
 app.use(methodOverride('_method'));
 app.use(express.urlencoded({extended:false}));
 app.use(express.static('public'));
-app.set('jsx', require('express-react-views').createEngine());
+app.set('view engine', 'jsx');
+app.engine('jsx', require('express-react-views').createEngine());
 //mongoose
 mongoose.set('strictQuery', true);
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -23,7 +24,7 @@ mongoose.connection.once('open', () => {
 });
 //home
 app.get('/', (req, res) =>{
-    res.send('welcome to this store')
+    res.render('Home')
 })
 //INDEX
 app.get('/products', (req, res) => {
