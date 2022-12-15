@@ -7,13 +7,14 @@ const methodOverride = require('method-override');
 
 const Store = require('./models/storeSchema.js');
 //middleware
+app.use(methodOverride('_method'));
 app.use((req, res, next) => {
     console.log('I run for all routes');
     next();
 });
-app.use(methodOverride('_method'));
 app.use(express.urlencoded({extended:false}));
-app.use(express.static('public'));
+// app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'))
 app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
 //mongoose
@@ -29,17 +30,28 @@ app.get('/', (req, res) =>{
 //INDEX
 app.get('/products', (req, res) => {
     Store.find({}, (error, allProduct) => {
-        res.render('Index', {product: allProduct})
-    })
-})
+        res.render('Index', {product: allProduct});
+    });
+});
 //NEW
 app.get('/products/new', (req, res) => {
     res.render('New')
 })
-
+//DELETE
+app.delete('/products/:id', (req, res) => {
+    Store.findByIdAndRemove(req.params.id, (err, data) => {
+        res.redirect('/products');
+    });
+});
+//UPDATE
+app.put('/products/:id', (req,res) => {
+    Store.findByIdAndUpdate(req.params.id, req.body, (err, updatedProduct) =>{
+        console.log(updatedProduct);
+        res.redirect(`/products/${req.params.id}`);
+    });
+});
 //CREATE
 app.post('/products',(req,res) => {
-    // let productBody = req.body;
     Store.create(req.body, (error, createdProduct) => {
         res.redirect('/products')
     })
@@ -65,6 +77,17 @@ app.post('/products',(req,res) => {
 // .finally(() => {
 //  db.close()
 // })
+
+//EDIT
+app.get('/products/:id/edit', (req, res)=>{
+    Store.findById(req.params.id, (err, foundProduct)=>{
+      if(!err){
+        res.render('Edit',{product: foundProduct});
+    } else {
+      res.send({ msg: err.message })
+    }
+    });
+});
 //SHOW
 app.get('/products/:productID', (req, res) => {
     Store.findById(req.params.productID, (err, chosenProduct) => {

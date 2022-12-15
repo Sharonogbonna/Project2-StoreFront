@@ -3,6 +3,30 @@ body{
     display: block;
     margin: auto;
 }
+.menu-bar{
+    text-align: center;
+    padding-top: 50px;
+    color: #747c6f; /* camo green */
+}
+.container{
+    border:5px dotted #c9a087; /* sorrel brown */
+    width: 80vw;
+    margin: auto;
+    padding-bottom: 25px;
+    margin-bottom: 40px;
+}
+h1{
+    color:#dbb396; /* Cameo */
+    text-align: center;
+    font-size: 50px;
+    -webkit-text-stroke: 2px #c9a087;/* sorrel brown */
+}
+h2{
+    color:#c9a087; /* sorrel brown */
+    text-align: center;
+    font-size: 35px;
+    -webkit-text-stroke: 2px #605952;/*soya bean*/
+}
 form{
     display: block;
     width: 225px;
@@ -11,6 +35,7 @@ form{
     padding: 25px 120px 25px 90px;
     border: 10px double #ffffff;
     font-size: 20px;
+    color: #605952; /* soya bean */
 }
 form input{
     width: 250px;
@@ -40,10 +65,41 @@ select{
     padding: 3px 6px 3px 6px;
     text-align: center;
 }
-
-h1{
-    color:#dbb396; /* Cameo */
-    text-align: center;
-    font-size: 50px;
-    -webkit-text-stroke: 2px #c9a087;/* sorrel brown */
+/* CSS
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
+
+.button-52:after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+} */

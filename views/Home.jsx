@@ -5,7 +5,7 @@ class Home extends React.Component {
     render() {
         return(
             <DefaultLayout title="Sharomatherapy">
-          <div>
+          <div className='container'>
             <link rel="stylesheet" type="text/css" href="../css/home.css"/>
                   <h3>Welcome to the Shop</h3>
           </div>

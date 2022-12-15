@@ -1,6 +1,19 @@
 body{
-    text-align: center;
     background-color: #fdeee6; /* Provincial Pink */
+    display: block;
+    margin: auto;
+}
+.menu-bar{
+    text-align: center;
+    padding-top: 50px;
+    color: #747c6f; /* camo green */
+}
+.container{
+    border:5px dotted #c9a087; /* sorrel brown */
+    width: 80vw;
+    margin: auto;
+    padding-bottom: 25px;
+    margin-bottom: 40px;
 }
 h1{
     color:#dbb396; /* Cameo */

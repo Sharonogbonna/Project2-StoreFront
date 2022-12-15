@@ -7,7 +7,6 @@ class Index extends React.Component {
     return (
       <DefaultLayout title="Sharomatherapy">
         <link rel="stylesheet" type="text/css" href="../css/index.css"/>
-        <a href="/products/new">Create New Product</a>
         <ul>
           {product.map((product) => {
             return (
