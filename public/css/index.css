@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+    background-color: #fdeee6; /* Provincial Pink */
+}
+h1{
+    color:#dbb396; /* Cameo */
+    text-align: center;
+    font-size: 50px;
+    -webkit-text-stroke: 2px #c9a087;/* sorrel brown */
+}
+.item-container{
+    /* background-color: white;
+    border: 5px solid black; */
+    position: relative;
+    text-align: center;
+    color: #c9a087;
+}
+.product-name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ul{
+    list-style: none;
+}

@@ -1,5 +1,5 @@
 body{
-    background-color: #fdeee6; /* Provicial Pink */
+    background-color: #fdeee6; /* Provincial Pink */
     display: block;
     margin: auto;
 }
@@ -17,6 +17,9 @@ form input{
     height: 20px;
     display: block;
     margin-top: 5px;
+}
+#description{
+    margin-bottom: 15px;
 }
 select{
     margin-top: 5px;
@@ -42,5 +45,5 @@ h1{
     color:#dbb396; /* Cameo */
     text-align: center;
     font-size: 50px;
-    -webkit-text-stroke: 2px #c9a087; /*sorrell brown/*
+    -webkit-text-stroke: 2px #c9a087;/* sorrel brown */
 }
