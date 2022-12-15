@@ -28,23 +28,26 @@ h2{
     -webkit-text-stroke: 2px #605952;/*soya bean*/
 }
 form{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 225px;
     margin: auto;
     background-color: #e7c3ac; /* Cashmere */
-    padding: 25px 120px 25px 90px;
+    padding: 25px 80px;
     border: 10px double #ffffff;
     font-size: 20px;
     color: #605952; /* soya bean */
 }
-form input{
+form .input-field{
     width: 250px;
     height: 20px;
     display: block;
     margin-top: 5px;
 }
 #description{
-    margin-bottom: 15px;
+    height: inherit;
 }
 select{
     margin-top: 5px;
@@ -53,7 +56,7 @@ select{
     width: 260px;
     height: 28px;
 }
-#submit{
+/* #submit{
     background-color: #ffffff;
     display: block;
     width: 150px;
@@ -64,42 +67,34 @@ select{
     margin-top: 10px;
     padding: 3px 6px 3px 6px;
     text-align: center;
-}
-/* CSS
-.button-52 {
+} */
+
+/* CSS */
+.button{
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  font-weight: 200;
-  letter-spacing: 1px;
-  padding: 13px 20px 13px;
-  outline: 0;
-  border: 1px solid black;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
   cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
   position: relative;
-  background-color: rgba(0, 0, 0, 0);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
 
-.button-52:after {
-  content: "";
-  background-color: #ffe54c;
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 7px;
-  left: 7px;
-  transition: 0.2s;
-}
-
-.button-52:hover:after {
-  top: 0px;
-  left: 0px;
+.button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
 }
 
 @media (min-width: 768px) {
-  .button-52 {
-    padding: 13px 50px 13px;
+  .button{
+    padding: 0.25em 0.75em;
   }
-} */
+}

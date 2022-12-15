@@ -9,6 +9,9 @@ body{
     padding-top: 50px;
     color: #747c6f; /* camo green */
 }
+.container{
+    padding-bottom: 50px;
+}
 h1{
     color:#dbb396; /* Cameo */
     text-align: center;
