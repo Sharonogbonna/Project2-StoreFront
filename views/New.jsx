@@ -9,9 +9,10 @@ class New extends React.Component{
                 <form action="/products" method="POST">
                     Item Name: <input type="text" name='name' /><br />
                     Image Source: <input type="text" name="img" /><br />
-                    Description: <input type="text" name='description' id='description'/><br />
-                    Price: <input type="text" name="price" /><br />
-                    Quantity: <input type="text" /><br />
+                    <label for="description">Description:</label>
+                    <textarea type="text" name='description' id='description' rows="3" cols="30"></textarea><br />
+                    Price: <input type="number" name="price" /><br />
+                    Quantity: <input type="number" /><br />
                     <label for="category">Category: <br /> </label>
                     <select name="category" id='category'>
                     <option value="" disabled selected hidden>Please Select a Category...</option>
