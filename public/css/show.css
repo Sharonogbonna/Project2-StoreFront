@@ -18,23 +18,39 @@ h1{
     font-size: 50px;
     -webkit-text-stroke: 2px #c9a087;/* sorrel brown */
 }
-h2{
-    font-size: 35px;
-}
+
 .product-card{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-    padding: 10px;
+    padding: 3rem;
     border: 3px double white;
     background-color:  #e7c3ac; /* cashmere */
+    height: fit-content;
     width: 70vw;
     color: #605952; /* soya bean */
 }
-/* CSS */
+.product{
+  display: flex;
+  flex-direction: row;
+}
+.product-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2em;
+  font-size: 15px;
+}
+h2{
+  font-size: 35px;
+  margin-top: 0;
+}
 .button-89 {
   --b: 3px;   /* border thickness */
   --s: .45em; /* size of the corner */
-  --color: #373B44;
+  --color: #605952;
 
   padding: calc(.5em + var(--s)) calc(.9em + var(--s));
   color: var(--color);
@@ -64,4 +80,11 @@ h2{
 .button-89:active {
   background: var(--color);
   color: #fff;
+}
+.button-89:disabled{
+  --_p: 0px;
+  outline-color: #fdeee6;
+  color: #fdeee6;
+  background-color: var(--color);
+  outline-offset: .05em;
 }

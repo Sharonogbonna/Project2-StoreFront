@@ -44,6 +44,17 @@ app.delete('/products/:id', (req, res) => {
     });
 });
 //UPDATE
+app.put('/products/buy/:id', (req, res) => {
+    Store.findById(req.params.id, (err, foundProduct) => {
+        let newProduct = foundProduct;
+        newProduct.quantity -= 1;
+
+        Store.findByIdAndUpdate(req.params.id, newProduct, (err, foundProduct) => {
+            console.log(`sold a ${newProduct.name}`);
+            res.redirect(`/products/${req.params.id}`);
+        });
+    });
+});
 app.put('/products/:id', (req,res) => {
     Store.findByIdAndUpdate(req.params.id, req.body, (err, updatedProduct) =>{
         console.log(updatedProduct);
@@ -56,27 +67,6 @@ app.post('/products',(req,res) => {
         res.redirect('/products')
     })
 })
-// const myFirstProduct = {
-//     name: 'Miss Dior',
-//     img: 'https://eco-beauty.dior.com/dw/image/v2/BDGF_PRD/on/demandware.static/-/Sites-master_dior/default/dw681466c0/assets/Y0996347/Y0996347_C099600764_E01_GHC.jpg?sw=715&sh=773&sm=fit&imwidth=800',
-//     category: 'Perfume',
-//     price: 200,
-//     quantity: 5,
-//     description: 'she smells really good i promise'
-// }
-// Store.create(myFirstProduct)
-// // if database transaction succeeds
-// .then((product) => {
-//   console.log(product)
-// })
-// // if database transaction fails
-// .catch((error) => {
-//   console.log(error)
-// })
-// // close db connection either way
-// .finally(() => {
-//  db.close()
-// })
 
 //EDIT
 app.get('/products/:id/edit', (req, res)=>{
