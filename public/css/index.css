@@ -25,10 +25,13 @@ a:active{
     padding-top: 50px;
 }
 .container{
-    border:5px dotted #c9a087; /* sorrel brown */
-    width: 80vw;
+    display: flex;
     margin: auto;
-    margin-right: 2em;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border:5px dotted #c9a087; sorrel brown */
+    width: 80vw;
     padding-bottom: 25px;
     margin-bottom: 40px;
 }
@@ -40,6 +43,7 @@ h1{
 }
 .item-container{
     width: fit-content;
+    height: fit-content;
     margin: auto;
     margin-bottom: 2rem;
     border: 5px solid #dbb396;
@@ -47,7 +51,7 @@ h1{
     text-align: center;
     color: #c9a087;
     overflow-wrap: break-word;
-    background-color: white;
+    /* background-color: white; */
 }
 .overlay{
     position: absolute;
@@ -55,12 +59,6 @@ h1{
     height: 100%;
     background-color: rgba(255, 255, 255, 0.643);
     /* border: 3px solid black; */
-    /* height: 100%; */
-    /* top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(255, 255, 255, 0.5); */
 }
 .overlay:hover{
     background-color: #1c1a1800;

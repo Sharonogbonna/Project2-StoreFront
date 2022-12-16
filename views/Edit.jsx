@@ -10,14 +10,30 @@ class Edit extends React.Component{
                 <link rel="stylesheet" type="text/css" href="/css/new.css"/>
                 <h2>Edit Existing Product</h2>
                 <form action={`/products/${product._id}?_method=PUT`} method="POST">
-                    Item Name: <input type="text" name='name' defaultValue={product.name} /><br />
-                    Image Source: <input type="text" name="img" defaultValue={product.img}/><br />
+                    <div className="name-and-input">
+                    Item Name: <input className='input-field' type="text" name='name' defaultValue={product.name} /><br />
+                    </div>
+                    
+                    <div className="name-and-input">
+                    Image Source: <input className='input-field' type="text" name="img" defaultValue={product.img}/><br />
+                    </div>
+                   
+                    <div className="name-and-input">
                     <label htmlFor="description">Description:</label>
-                    <textarea type="text" name='description' id='description' rows="3" cols="30" defaultValue={product.description}></textarea><br />
-                    Price: <input type="number" name="price" defaultValue={product.price}/><br />
-                    Quantity: <input type="number" name="quantity" defaultValue={product.quantity}/><br />
+                    <textarea type="text" className='input-field' name='description' id='description' rows="3" cols="30" defaultValue={product.description}></textarea><br />
+                    </div>
+                    
+                    <div className="name-and-input">
+                    Price: <input className='input-field' type="number" name="price" defaultValue={product.price}/><br />
+                    </div>
+                    
+                    <div className="name-and-input">
+                    Quantity: <input className='input-field' type="number" name='quantity' defaultValue={product.quantity}/><br />
+                    </div>
+                    
+                    <div className="name-and-input">
                     <label htmlFor="category">Category: <br /> </label>
-                    <select name="category" id='category' >
+                    <select name="category" id='category'>
                     <option defaultValue={product.category} selected>{`${product.category}`}</option>
                         <option value="candle">Candle</option>
                         <option value="perfume">Perfume</option>
@@ -25,9 +41,11 @@ class Edit extends React.Component{
                         <option value="wax">Scented Wax</option>
                         <option value="spray">Room/Linen Spray</option>
                     </select><br /><br />
-                    <input type="submit" id='submit' value="Edit Product" />
+                    </div>
+                    
+                    <input className='button' type="submit" id='submit' value="Edit Product" />
                 </form>
-            </div>
+            </div>  
             </DefaultLayout>
             
         );
