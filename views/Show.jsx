@@ -27,7 +27,7 @@ class Show extends React.Component {
           <div className="product-card">
             <h2 id="product-name" >{product.name.toUpperCase()}</h2>
             <div className="product">
-            <img src={product.img} alt={product.name} width="60%" />
+            <img src={product.img} alt={product.name} width="60%" id="product-img"/>
             <br />
             <div className="product-info">
             <p><strong>Description:</strong>  {product.description}</p>
@@ -37,14 +37,14 @@ class Show extends React.Component {
             </div>
           </div>
           <br />
+          <div className="edit-delete" >
           <form
             action={`/products/${product._id}?_method=DELETE`}
-            method="POST"
-          >
-            <input type="submit" value="DELETE" />
+            method="POST">
+            <input type="submit" value="DELETE" id="delete-btn" className="button"/>
           </form>
-          <br />
-          <a href={`/products/${product.id}/edit`}>Edit Product</a>
+          <a href={`/products/${product.id}/edit`}> <button  className="button">Edit Product</button></a>
+          </div>
         </div>
       </DefaultLayout>
     );
