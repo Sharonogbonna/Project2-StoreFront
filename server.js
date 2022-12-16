@@ -13,8 +13,8 @@ app.use((req, res, next) => {
     next();
 });
 app.use(express.urlencoded({extended:false}));
-// app.use(express.static('public'));
 app.use(express.static(__dirname + '/public'))
+app.use(express.static(__dirname + '/images'))
 app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
 //mongoose

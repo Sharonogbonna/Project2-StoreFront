@@ -19,8 +19,6 @@ class Index extends React.Component {
                     <img
                       src={product.img}
                       alt="a photo"
-                      // width="250"
-                      // height="250"
                     />
                     <a href={`/products/${product.id}`}>
                       <div className="product-name">
