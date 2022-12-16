@@ -6,15 +6,14 @@ class DefaultLayout extends React.Component {
             <html>
             <head>
                 <title>{this.props.title}</title></head>
-                <link rel="icon" href="./images/sharomatherapyLogo.png" type="image/gif"></link>
+                <link rel="icon" href="./images/anotherLogo.png" type="image/gif"></link>
             <body>
+            <div className='Logo'>
+                    <img src='./images/anotherLogo.png' alt="logo"/>
+                </div>
                 <div className='menu-bar'>
                 <a href="/">Home</a>  | <a href="/products">Store Front</a> | <a href="/products/new">Create Product</a>
                 </div>
-                <div className='Logo'>
-                    
-                </div>
-            
             <h1>{this.props.title}</h1>
             
             {this.props.children}

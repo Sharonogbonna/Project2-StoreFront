@@ -40,6 +40,7 @@ class Edit extends React.Component{
                         <option value="oil">Oil</option>
                         <option value="wax">Scented Wax</option>
                         <option value="spray">Room/Linen Spray</option>
+                        <option value="other">Other</option>
                     </select><br /><br />
                     </div>
                     

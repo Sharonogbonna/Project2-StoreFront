@@ -42,10 +42,3 @@ h1{
     margin-top: 5px;
     margin-bottom: 15px;
 }
-.container{
-    border:5px dotted #c9a087; /* sorrel brown */
-    width: 80vw;
-    margin: auto;
-    padding-bottom: 25px;
-    margin-bottom: 40px;
-}
