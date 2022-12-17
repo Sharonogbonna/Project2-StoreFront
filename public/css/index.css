@@ -1,3 +1,10 @@
+/* @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  } */
 body{
     background-color: #fdeee6; /* Provincial Pink */
     display: flex;
@@ -73,10 +80,16 @@ img{
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.643);
-    /* border: 3px solid black; */
+    /* animation-name: example;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-fill-mode: both; */
 }
 .overlay:hover{
     background-color: #c9a087f4;
+    
 }
 .product-name{
     text-decoration: none;

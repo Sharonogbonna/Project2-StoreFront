@@ -1,3 +1,4 @@
+
 body{
     background-color: #fdeee6; /* Provincial Pink */
     text-align: center;
@@ -54,11 +55,14 @@ h1{
     background-color:  #e7c3ac; /* cashmere */
     height: fit-content;
     width: 70vw;
+    max-width: 35rem;
+    max-height: 22rem;
     color: #605952; /* soya bean */
 }
-
 #product-img{
-  
+  object-fit: cover;
+  min-width: 200px;
+  min-height: 150px;
 }
 .product{
   display: flex;
@@ -68,13 +72,39 @@ h1{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 2em;
+  margin: 2rem;
   font-size: 15px;
 }
 h2{
   font-size: 35px;
   margin-top: 0;
   color: #8e6045;
+}
+@keyframes fade-in{
+  0%{
+    opacity: 0;
+    width: 50rem;
+    height: 40rem;
+  }
+  50%{
+    opacity: .15;
+    /* width: 30rem;
+    height: 30rem; */
+  }
+  80%{
+    opacity: .5;
+  }
+  100%{
+    opacity: 1;
+    width: initial;
+    height: initial;
+  }
+}
+.product-card > *, 
+.product > *,
+.product-info > *,
+.stats > *{
+  animation: fade-in 1s linear 0s 1;
 }
 .button-89 {
   --b: 3px;   /* border thickness */
@@ -122,6 +152,8 @@ h2{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  max-width: 35rem;
+  margin: auto;
 }
 .button{
   font-family: "Open Sans", sans-serif;
