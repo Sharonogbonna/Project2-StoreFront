@@ -32,6 +32,37 @@ app.get('/products', (req, res) => {
         res.render('Index', {product: allProduct});
     });
 });
+//Specific Products
+app.get('/products/perfume', (req, res) => {
+    Store.find({}, (error, allProduct) => {
+        res.render('Perfume', {product: allProduct});
+    });
+});
+app.get('/products/oil', (req, res) => {
+    Store.find({}, (error, allProduct) => {
+        res.render('Oils', {product: allProduct});
+    });
+});
+app.get('/products/wax', (req, res) => {
+    Store.find({}, (error, allProduct) => {
+        res.render('Wax', {product: allProduct});
+    });
+});
+app.get('/products/candle', (req, res) => {
+    Store.find({}, (error, allProduct) => {
+        res.render('Candle', {product: allProduct});
+    });
+});
+app.get('/products/spray', (req, res) => {
+    Store.find({}, (error, allProduct) => {
+        res.render('Sprays', {product: allProduct});
+    });
+});
+app.get('/products/other', (req, res) => {
+    Store.find({}, (error, allProduct) => {
+        res.render('Other', {product: allProduct});
+    });
+});
 //NEW
 app.get('/products/new', (req, res) => {
     res.render('New')

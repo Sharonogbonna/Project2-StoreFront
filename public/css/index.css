@@ -32,6 +32,14 @@ a:active{
     text-align: center;
     padding-top: 25px;
 }
+.categories{
+    text-align: center;
+    font-size: 15px;
+    color: #806a5d;
+}
+.categories > a:link{
+   font-size: 15px;
+}
 .container{
     display: flex;
     margin: auto;
