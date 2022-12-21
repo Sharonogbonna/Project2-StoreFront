@@ -6,6 +6,10 @@ class Index extends React.Component {
     const { product } = this.props;
     return (
       <DefaultLayout title="Sharomatherapy">
+        <div className="categories">
+          Shop By Categories: 
+        <a href="/products/perfume"> Perfumes</a> |  <a href="/products/oil">Essential Oils</a> |  <a href="/products/wax"> Scented Wax</a> |  <a href="/products/spray">Room and Linen Sprays</a> |  <a href="/products/candle">Candles</a> |  <a href="/products/other">Other</a>
+        </div>
         <div className="container">
           <link rel="stylesheet" type="text/css" href="../css/index.css" />
           <ul>
