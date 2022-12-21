@@ -42,10 +42,45 @@ h1{
     margin-top: 5px;
     margin-bottom: 15px;
 }
+
+.images-container{
+    display: flex;
+    flex-direction: row;
+    margin:auto;
+    max-width: 80vw;
+    height: fit-content;
+    overflow: auto;
+    margin-bottom: 1rem;
+}
+.overlay{
+    position: absolute;
+    background-color: #fdeee634;
+    height: 154px;
+    width: 100%;
+}
+img{
+    width: 211.5px;
+    height: 154px;
+    max-width: 100%;
+    object-fit: cover;
+}
+h3{
+    text-align: center;
+    color: #806a5d;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
 .container{
-    border:5px dotted #c9a087; /* sorrel brown */
+    border:5px dotted #c9a087; 
+    /* sorrel brown */
     width: 80vw;
     margin: auto;
-    padding-bottom: 25px;
+    padding: 25px 10px 25px 10px;
     margin-bottom: 40px;
+    max-width: 50em;
+}
+.indent{
+    text-indent: 20px;
+    margin: 0;
 }

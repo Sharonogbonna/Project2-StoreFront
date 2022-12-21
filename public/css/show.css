@@ -94,6 +94,9 @@ h2{
   80%{
     opacity: .5;
   }
+  90%{
+    opacity: .75;
+  }
   100%{
     opacity: 1;
     width: initial;
@@ -104,7 +107,7 @@ h2{
 .product > *,
 .product-info > *,
 .stats > *{
-  animation: fade-in 1s linear 0s 1;
+  animation: fade-in .75s ease-in 0s 1;
 }
 .button-89 {
   --b: 3px;   /* border thickness */
