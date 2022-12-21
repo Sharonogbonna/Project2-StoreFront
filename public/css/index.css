@@ -51,8 +51,8 @@ h1{
     margin-bottom: 15px;
 }
 .item-container{
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -79,7 +79,7 @@ img{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.643);
+    background-color: rgba(255, 255, 255, 0.526);
     /* animation-name: example;
     animation-duration: 3s;
     animation-delay: 1s;
@@ -88,10 +88,11 @@ img{
     animation-fill-mode: both; */
 }
 .overlay:hover{
-    background-color: #c9a087f4;
+    background-color: #806a5df4;
     
 }
 .product-name{
+    color: #1c1a18;
     text-decoration: none;
     position: absolute;
     top: 50%;
