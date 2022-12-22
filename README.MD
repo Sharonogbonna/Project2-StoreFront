@@ -13,10 +13,10 @@ The user also has the option to shop by category. When selected it will only dis
 ![Shop by category](/public/images/category.png)
 When the user selects an item, it will bring them to that items page. Here, the user has the option to buy the item, delete the item from the database, or edit the items information.
 ![Show page for each specific item](/public/images/show.png)
-**To Create or Add a Product:**
-* Click on "Create Product" on the top of any screen, fill out the form in its *entirety* and click submit.
-**To Edit Product:**
-* On an items individual page, click on the "Edit Product" button on the bottom of the screen. It will bring to a page similar to the image below, however the current information will be filled in.
+#### To Create or Add a Product:
+Click on "Create Product" on the top of any screen, fill out the form in its *entirety* and click submit.
+#### To Edit Product:
+On an items individual page, click on the "Edit Product" button on the bottom of the screen. It will bring to a page similar to the image below, however the current information will be filled in.
 ![Create Product](/public/images/new.png)
 
 #### Other Features
@@ -55,12 +55,25 @@ I am enrolled in a software engineering bootcamp (15wks). This was our second pr
 **Start app:**
 * Run nodemon in the terminal and open the app using [Local Host 3000](http://localhost:3000)
 
-## Credits
-As I mentioned earlier, this was my first project ever so I am super thankful for the guidance and help I received along the way. Special shout out my instructors, Kasper and Tishana, as well as my friend Jag. 
+## Acknowledgements
+#### My Per Scholas Instructors and Cycle 28:
+* Tishana Trainor
+* Kasper Kain
+* [Hadia Shafique](https://github.com/hadiashafique97)
+* [Cody Smith](https://github.com/ctsmit) README Template
+* [Cody Jennings](https://github.com/Cody-Jennings) README Template
 
+#### Other Resources:
+* [Looka](https://looka.com/onboarding) - Free Logo Design
+* [W3schools](https://www.w3schools.com/) - Various References
+* [CSS Scan](https://getcssscan.com/css-buttons-examples) - Button CSS
+* Getty Images - Product Images
+* Amazon - Product Images
 
- I realized I never got to tell y'all what the show in your video. In your less than 5min video, you need to:
-Tell us about your store,
- Show each restful route (INDUCES),
-Show your routes in your code
-Talk about your biggest challenge.
+## Disclaimer
+
+I am not affiliated with nor own any rights regarding this store app's inventory or image url source. No profits were generated from this project. All materials utilized were for educational and demonstration purposes only.
+
+## Additional thoughts
+
+I really enjoyed working on this project. I realized that I enjoy full stack development, but I *really* enjoy front-end work. I like working with the css and assisting other classmates with it. I am hoping to get more experience using animations and transitions to make pages more interactive.
