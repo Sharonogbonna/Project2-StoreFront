@@ -5,6 +5,8 @@ class Home extends React.Component {
   render() {
         return(
             <DefaultLayout title="Sharomatherapy">
+              <h3 className='slogan'>
+                "Scented Serenity"</h3>
               <div className="images-container">
                 <a href="/products"><div className="overlay"></div></a>
                 <div className="stock-image">
