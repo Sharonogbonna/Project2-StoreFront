@@ -4,14 +4,26 @@ Sharomatherapy is a model store front that sells items for aromatherapy. It was 
 ## About the project 
 [Video Walk-through]()
 <!-- [Live Link]() -->
-
+The Land Page/Home Page
 ![Home Page](/public/images/home.png)
+When the user clicks on an image on the home page or the store front link they will be brought to the index page that shows every item available in the shop. Items will highlight brown when hovered over.
+![The Store Front](/public/images/index.png) 
+![The Store Front with item highlighted](/public/images/indexSelect.png)
+The user also has the option to shop by category. When selected it will only display the items that fall into that category. 
+![Shop by category](/public/images/category.png)
+When the user selects an item, it will bring them to that items page. Here, the user has the option to buy the item, delete the item from the database, or edit the items information.
+![Show page for each specific item](/public/images/show.png)
+**To Create or Add a Product:**
+* Click on "Create Product" on the top of any screen, fill out the form in its *entirety* and click submit.
+**To Edit Product:**
+* On an items individual page, click on the "Edit Product" button on the bottom of the screen. It will bring to a page similar to the image below, however the current information will be filled in.
+![Create Product](/public/images/new.png)
 
-![Playing the Game](./images/inGame.png)
+#### Other Features
+The logo was created using [Looka](https://looka.com/onboarding).
+When the user clicks on the logo, they will be brought back to the landing page.
+![logo](/public/images/anotherLogo.png)
 
-![Type out your guess](./images/typeGuess.png)
-
-![Christmas Theme](./images/holidayTheme.png)
 
 ## Motivation
 I am enrolled in a software engineering bootcamp (15wks). This was our second project assignment on week 10. We were tasked with creating a store front with various functionalities. 
