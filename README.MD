@@ -2,7 +2,7 @@
 Sharomatherapy is a model store front that sells items for aromatherapy. It was created using the JavaScript, the MERN stack, and CSS. It allows for users to add, edit, delete, and "buy" items. 
 
 ## About the project 
-[Video Walk-through]()
+[Video Walk-through](https://youtu.be/XnQ5-N0XrSU)
 <!-- [Live Link]() -->
 The Land Page/Home Page
 ![Home Page](/public/images/home.png)
@@ -60,8 +60,8 @@ I am enrolled in a software engineering bootcamp (15wks). This was our second pr
 * Tishana Trainor
 * Kasper Kain
 * [Hadia Shafique](https://github.com/hadiashafique97)
-* [Cody Smith](https://github.com/ctsmit) README Template
-* [Cody Jennings](https://github.com/Cody-Jennings) README Template
+* [Cody Smith](https://github.com/ctsmit) - README Template
+* [Cody Jennings](https://github.com/Cody-Jennings)- README Template
 
 #### Other Resources:
 * [Looka](https://looka.com/onboarding) - Free Logo Design
@@ -69,6 +69,8 @@ I am enrolled in a software engineering bootcamp (15wks). This was our second pr
 * [CSS Scan](https://getcssscan.com/css-buttons-examples) - Button CSS
 * Getty Images - Product Images
 * Amazon - Product Images
+* ChatGPT - Welcome Message and slogan (just for fun :P)
+* Jag Jennings - Store Name 
 
 ## Disclaimer
 
