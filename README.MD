@@ -1,12 +1,11 @@
 # Sharomatherapy
-## By: Sharon Ogbonna
-Sharomatherapy is a model store front that sells items for aromatherapy. It allows for users to add, edit, delete, and "buy" items. 
+Sharomatherapy is a model store front that sells items for aromatherapy. It was created using the JavaScript, the MERN stack, and CSS. It allows for users to add, edit, delete, and "buy" items. 
 
 ## About the project 
 [Video Walk-through]()
 <!-- [Live Link]() -->
 
-![Home Page]()
+![Home Page](/public/images/home.png)
 
 ![Playing the Game](./images/inGame.png)
 
