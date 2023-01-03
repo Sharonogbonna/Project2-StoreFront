@@ -3,7 +3,7 @@ Sharomatherapy is a model store front that sells items for aromatherapy. It was 
 
 ## About the project 
 [Video Walk-through](https://youtu.be/XnQ5-N0XrSU)
-<!-- [Live Link]() -->
+[Live Link](https://sharomatherapy.onrender.com/)
 The Land Page/Home Page
 ![Home Page](/public/images/home.png)
 When the user clicks on an image on the home page or the store front link they will be brought to the index page that shows every item available in the shop. Items will highlight brown when hovered over.
