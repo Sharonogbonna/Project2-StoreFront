@@ -9,7 +9,7 @@ class DefaultLayout extends React.Component {
                 <link rel="icon" href="/images/anotherLogo.png" type="image/gif"></link>
             <body>
             <div className='Logo'>
-            <a href="/"><img src='/images/anotherLogo.png' alt="logo"/></a>
+            <a href="/"><img src='/images/anotherLogo.png' alt="logo" width="150" height="150"/></a>
                 </div>
                 <div className='menu-bar'>
                 <a href="/">Home</a>  |  <a href="/products">Store Front</a>  |  <a href="/products/new">Create Product</a>

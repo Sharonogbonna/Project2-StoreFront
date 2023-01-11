@@ -12,8 +12,6 @@ body{
 }
 .Logo img{
     object-fit: contain;
-    height: 150px;
-    max-width: 150px;
     padding-top: 15px;
 }
 
